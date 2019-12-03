@@ -1,0 +1,57 @@
+%% Insight Centre for Data Analytics LaTeX poster template.
+%% 
+%% Created on Tue Jun 13 21:44:35 IST 2017
+%% 
+%% Copyright (C) by Sebastian Scheurer
+%% <sebastian.scheurer@insight-centre.org> for the Insight Centre for
+%% Data Analytics, Dep. of Computer Science, University College Cork,
+%% Ireland.
+
+%% For usage see the file example.tex
+
+\usepackage{graphicx}
+\usepackage{ubuntu}
+
+\newcommand{\insightFundingBy}[1]{\def\insightFundingText{#1}}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamersize{sidebar width left=0.05\paperwidth}
+\setbeamersize{sidebar width right=0.05\paperwidth}
+\setbeamerfont{frametitle}{size=\Huge,family=\fontUbuntu}
+\setbeamercolor{frametitle}{fg=white}
+\definecolor{posterAuthor}{RGB}{182,222,230}
+\definecolor{blockTitle}{RGB}{0,107,148}
+\setbeamercolor{author in frametitle}{fg=posterAuthor}
+\setbeamerfont{author in frametitle}{size=\Large,series=\bfseries,family=\fontUbuntuLight}
+\setbeamercolor{block title}{fg=blockTitle}
+\setbeamerfont{block title}{size=\Large,family=\fontUbuntu,series=\bfseries}
+\setbeamerfont{normal text}{size=\normalsize,family=\fontUbuntuLight}
+
+\setbeamertemplate{frametitle}{
+  \begin{minipage}[t][0.2\paperheight]{0.55\paperwidth}
+    \vspace{0.06\paperheight}
+    {\usebeamerfont{frametitle}
+      \usebeamercolor[fg]{frametitle}
+      \insertframetitle
+      \par}
+    
+    \vspace{\stretch{1}}
+
+    \usebeamercolor[fg]{author in frametitle}
+    \usebeamerfont{author in frametitle}
+    \insertauthor
+    \vspace{0.04\paperheight}
+  \end{minipage}
+}
+
+\addtobeamertemplate{block end}{
+  \vspace{\baselineskip}
+}
+
+\setbeamertemplate{footline}{
+  \hspace{0.06\paperwidth}\begin{minipage}[t][0.05\paperheight]{0.3\paperwidth}
+    \small \insightFundingText
+    
+\end{minipage}}
+
+\usefonttheme{professionalfonts}
