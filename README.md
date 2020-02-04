@@ -1,4 +1,4 @@
-# bot-dna-compression
+# bot-dna-compression [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/detecting-bot-behaviour-in-social-media-using/twitter-bot-detection-on-mib-datasets)](https://paperswithcode.com/sota/twitter-bot-detection-on-mib-datasets?p=detecting-bot-behaviour-in-social-media-using)
 
 This repository contains the Python notebooks for **Detecting Bot Behaviour in Social Media using Digital DNA Compression** (N. Pasricha, C. Hayes. 27th Irish Conference on Artificial Intelligence and Cognitive Science, 2019).
 
